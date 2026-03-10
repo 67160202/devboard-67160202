@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
-
+import PostCard from "./components/PostCard";
 import "./App.css";
 
 const POSTS = [
@@ -31,9 +31,16 @@ const USERS = [
   { id: 2, name: "สมหญิง รักเรียน", email: "somying@dev.com" },
   { id: 3, name: "วิชาญ โค้ดเก่ง", email: "wichan@dev.com" },
 ];
+
 <Navbar />;
+
 function App() {
-  return <Navbar />;
+  return (
+    <div className="container">
+      <Navbar />
+      <PostCard title="ทดสอบ" body="นี่คือเนื้อหาทดสอบ" />
+    </div>
+  );
 }
 
 export default App;
