@@ -33,6 +33,7 @@ function AddPostForm({ onAddPost }) {
         placeholder="หัวข้อโพสต์"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
+        maxLength={100}
         style={{
           width: "100%",
           padding: "0.5rem",
